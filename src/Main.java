@@ -6,11 +6,8 @@ public class Main {
         task1();
         task2();
         task3();
-            /*task4();
-            task5();
-            task6();
-            task7();
-            task8();*/
+        task4();
+
     }
 
     public static void task1() {
@@ -88,7 +85,7 @@ public class Main {
                 break;
             }
             System.out.print(number2[i] + " , ");
-            }
+        }
 
         String[] text = {"Hello", "word", "Java"};
         int n = text.length;
@@ -105,9 +102,23 @@ public class Main {
             }
             System.out.print(text[i] + " , ");
         }
+    }
 
+    public static void task4() {
+        System.out.println("\nЗадача 4");
+        int[] number = new int[3];
+        number[0] = 1;
+        number[1] = 2;
+        number[2] = 3;
+        for ( int i = 0;i < number.length;i++){
+            if(number[i]%2!=0){
+                number[i]=number[i]+1;
+            }
+            System.out.print(number[i] + " ");
+        }
     }
 }
+
 
 
 
